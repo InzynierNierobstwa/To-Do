@@ -4,6 +4,18 @@ let todoSearch = null;
 
 function addTask(text) {
     console.log('Task added to todolist');
+
+    const todo = document.createElement('div');
+    todo.classList.add('todo-element');
+
+    const todoBar = document.createElement('div');
+    todoBar.classList.add('todo-element-list');
+
+    const todoDate = document.createElement('div');
+    todoDate.classList.add('todo-element-bar');
+    const date = new Date();
+    const dateText = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear() + 'godz.: ' + date.getHours() + ':' + date.getMinutes();
+    todoDate.innerText = 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
